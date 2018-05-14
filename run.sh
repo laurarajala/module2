@@ -1,16 +1,18 @@
-sudo -s
+#!bin/bash/
+
+su -s
 echo "Changed to root..."
 
 echo "downloading OpenNebula packages..."
 echo "apt-get update"
 echo "Installing OpenNebula: opennebula -sunstone -node and bridge-utils"
 
-'.highstate.sh'
+'./highstate.sh'
 
 echo "ignoring config changes..."
 echo "ignoring user/group/dynamic_ownership configs..."
 
-su -ubuntu
+su - laura
 echo "Changed back to user: ubuntu"
 
 
