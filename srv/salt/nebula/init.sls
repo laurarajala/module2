@@ -4,7 +4,7 @@
 
 opennebula1:
   cmd.run:
-    -name: wget -q -O- http://downloads.opennebula.org/repo/Ubuntu/repo.key
+    - name: wget -q -O- http://downloads.opennebula.org/repo/Ubuntu/repo.key
 
 apt-key:
   cmd.run:
