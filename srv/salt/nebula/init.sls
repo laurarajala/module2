@@ -1,6 +1,10 @@
 opennebula1:
   cmd.run:
-    -name: wget -q -O- http://downloads.opennebula.org/repo/Ubuntu/repo.key | apt-key add&lt;strong&gt; -&lt;/strong&gt;
+    -name: wget -q -O- http://downloads.opennebula.org/repo/Ubuntu/repo.key
+
+apt-key:
+  cmd.run:
+    - name: apt-key add&lt
 
 /etc/apt/sources.list.d/opennebula.list:
   file.managed:
