@@ -8,7 +8,7 @@ opennebula1:
 
 apt-key:
   cmd.run:
-    - name: apt-key add&lt
+    - name: apt-key add -
 
 
 opennebula2:
