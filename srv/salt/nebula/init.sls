@@ -1,6 +1,6 @@
-/etc/apt/sources.list.d/opennebula.list:
+/etc/apt/sources.list.d /opennebula.list:
   file.managed:
-    - source: salt://opennebula/opennebula.list
+    - source: salt://nebula/list.txt
 
 opennebula1:
   cmd.run:
