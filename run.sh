@@ -1,17 +1,11 @@
 sudo -s
 echo "Changed to root..."
 
-wget -q -O- http://downloads.opennebula.org/repo/Ubuntu/repo.key | apt-key add&lt;strong&gt; -&lt;/s$
-echo "downloaded OpenNebula packages..."
-echo "deb http://downloads.opennebula.org /repo/Ubuntu/12.04 stable opennebula" &gt; /etc/apt/source$
-
-apt-get update
+echo "downloading OpenNebula packages..."
 echo "apt-get update"
 echo "Installing OpenNebula: opennebula -sunstone -node and bridge-utils"
 
 '.highstate.sh'
-
-apt-get install opennebula opennebula-sunstone opennebula-node bridge-utils
 
 echo "ignoring config changes..."
 echo "ignoring user/group/dynamic_ownership configs..."
