@@ -1,19 +1,18 @@
-/etc/apt/sources.list.d /opennebula.list:
+/etc/apt/sources.list.d/opennebula.list:
   file.managed:
     - source: salt://nebula/list.txt
 
 opennebula1:
   cmd.run:
-    - name: wget -q -O- http://downloads.opennebula.org/repo/Ubuntu/repo.key
+    - name: wget -qO - http://downloads.opennebula.org/repo/Ubuntu/repo.key
 
-apt-key:
+apt-key1:
   cmd.run:
     - name: sudo apt-key add -
 
-
 opennebula2:
    cmd.run:
-    - name: apt-get update
+    - name: sudo apt-get update
 
 programs:
   pkg.installed:
