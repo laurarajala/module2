@@ -126,9 +126,9 @@ default password is found in: cat /var/lib/one/.one/one_auth
 
 username: oneadmin
 
-![alt text](oneadmin.png "opennebula2 pic")
+![alt text](oneadmin.png "oneadmin pic")
 
-![alt text](nebula2.png "opennebula3 pic")
+![alt text](nebula2.png "nebula pic")
 
 
 
