@@ -119,8 +119,8 @@ default password is found in: cat /var/lib/one/.one/one_auth
 
 ### To access
 
-cd module2/
-sudo salt-call --local state.highstate --file-root srv/salt/
+	cd module2/
+	sudo salt-call --local state.highstate --file-root srv/salt/
 
 ![alt text](opennebula.png "opennebula pic")
 
