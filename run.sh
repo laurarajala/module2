@@ -1,6 +1,6 @@
 #!bin/bash/
 
-su -s
+sudo -s
 echo "Changed to root..."
 
 echo "downloading OpenNebula packages..."
@@ -12,7 +12,7 @@ echo "Installing OpenNebula: opennebula -sunstone -node and bridge-utils"
 echo "ignoring config changes..."
 echo "ignoring user/group/dynamic_ownership configs..."
 
-su - laura
+su - ubuntu
 echo "Changed back to user: ubuntu"
 
 
