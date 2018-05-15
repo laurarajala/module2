@@ -16,7 +16,7 @@ The module is not fully active - I had some trouble with root - rights,
 because the OpenNebula installation required root -rights to add the apt-key
 to access the opennebula -package..
 
->> used "su -" to access the root and "su - ubuntu" to go back to normal user on run.sh
+>> used "sudo -s" to access the root and "su - ubuntu" to go back to normal user on run.sh
 
 This worked fine while installing "by-hand" so tried using it for saltstack as well
 
@@ -64,7 +64,7 @@ default password is found in: cat /var/lib/one/.one/one_auth
 
 	#!bin/bash/
 
-	su -
+	sudo -s
 	echo "Changed to root..."
 	
 	echo "downloading OpenNebula packages..."
